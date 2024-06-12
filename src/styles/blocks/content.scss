@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Leo Hand;
+  font-family: "Leo Hand";
   src: url("../fonts/LeoHand-Light.ttf");
 }
 
@@ -14,11 +14,11 @@
     background-color: #fff;
     opacity: 0.7;
 
-    @include onMobile {
+    @include on-mobile {
       width: 280px;
     }
 
-    @include onTablet {
+    @include on-tablet {
       width: 568px;
       display: flex;
       justify-content: center;
@@ -30,18 +30,18 @@
 
   &_text {
     margin-top: 50px;
-    font-family: Leo Hand, sans-serif;
+    font-family: "Leo Hand", sans-serif;
     width: 768px;
 
     text-align: center;
 
-    @include onMobile {
+    @include on-mobile {
       width: 280px;
       margin: 30px auto auto;
       font-size: 20px;
     }
 
-    @include onTablet {
+    @include on-tablet {
       width: 568px;
       font-size: 26px;
       margin: 40px auto auto;
@@ -51,12 +51,12 @@
       width: 75px;
       height: 75px;
 
-      @include onMobile {
+      @include on-mobile {
         width: 45px;
         height: 45px;
       }
 
-      @include onTablet {
+      @include on-tablet {
         width: 60px;
         height: 60px;
       }
@@ -66,12 +66,12 @@
       width: 100px;
       height: 100px;
 
-      @include onMobile {
+      @include on-mobile {
         width: 60px;
         height: 60px;
       }
 
-      @include onTablet {
+      @include on-tablet {
         width: 80px;
         height: 80px;
       }
@@ -95,13 +95,13 @@
       background-color: #000;
       font-size: 32px;
 
-      @include onMobile {
+      @include on-mobile {
         width: 150px;
         height: 35px;
         font-size: 20px;
       }
 
-      @include onTablet {
+      @include on-tablet {
         width: 225px;
         height: 50px;
         font-size: 26px;
@@ -112,11 +112,11 @@
   &_date {
     font-size: 48px;
 
-    @include onMobile {
+    @include on-mobile {
       font-size: 28px;
     }
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 36px;
     }
   }
@@ -131,12 +131,12 @@
     width: 560px;
     height: 400px;
 
-    @include onMobile {
+    @include on-mobile {
       width: 280px;
       height: 190px;
     }
 
-    @include onTablet {
+    @include on-tablet {
       width: 400px;
       height: 290px;
     }
@@ -156,13 +156,13 @@
     background-position: center center;
     background-repeat: no-repeat;
 
-    @include onMobile {
+    @include on-mobile {
       width: 250px;
       height: 30px;
       margin: auto;
     }
 
-    @include onTablet {
+    @include on-tablet {
       width: 350px;
       height: 60px;
     }
@@ -183,12 +183,12 @@
   width: 100px;
   height: 100px;
 
-  @include onMobile {
+  @include on-mobile {
     width: 50px;
     height: 50px;
   }
 
-  @include onTablet {
+  @include on-tablet {
     width: 75px;
     height: 75px;
   }
@@ -198,12 +198,12 @@
   width: 110px;
   height: 110px;
 
-  @include onMobile {
+  @include on-mobile {
     width: 55px;
     height: 55px;
   }
 
-  @include onMobile {
+  @include on-tablet {
     width: 80px;
     height: 80px;
   }
@@ -212,42 +212,42 @@
 .form {
   width: 768px;
 
-  @include onMobile {
+  @include on-mobile {
     width: 300px;
   }
 
-  @include onTablet {
+  @include on-tablet {
     width: 568px;
   }
 }
 
-#map-restaurant {
+.restaurant {
   width: 100%;
   height: 450px;
   border: 0;
 
-  @include onMobile {
+  @include on-mobile {
     width: 280px;
     height: 140px;
   }
 
-  @include onTablet {
+  @include on-tablet {
     width: 568px;
     height: 250px;
   }
 }
 
-#map-merried {
+.merried {
   width: 100%;
   height: 450px;
   border: 0;
 
-  @include onMobile {
+  @include on-mobile {
     width: 280px;
     height: 140px;
   }
 
-  @include onTablet {
+  @include on-tablet {
     width: 568px;
     height: 250px;
   }

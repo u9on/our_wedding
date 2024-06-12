@@ -11,12 +11,12 @@
   background-repeat: no-repeat;
   margin: auto;
 
-  @include onMobile {
+  @include on-mobile {
     width: 300px;
     height: 100px;
   }
 
-  @include onTablet {
+  @include on-tablet {
     width: 568px;
     height: 150px;
   }
