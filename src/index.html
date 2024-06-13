@@ -99,7 +99,29 @@
         </div><br>
       </div>
     </footer>
-    <script src="./scripts/main.js"></script>
+    <script>
+      function initMap() {
+      let mapReastaurant;
+      let mapMerried;
+
+      mapReastaurant = new google.maps.Map(document.querySelector("#map-restaurant"),
+        {
+          center: {
+            lat: 47.86636644473956,
+            lng: 35.05962885142143,
+          },
+          zoom: 17,
+        });
+
+      mapMerried = new google.maps.Map(document.querySelector("#map-merried"), {
+        center: {
+          lat: 47.83079492829225,
+          lng: 35.15930220709443,
+        },
+        zoom: 17,
+      });
+    }
+    </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDmoJ3vqO4N8gyN8QUk1NsQvDVEjnZYyk&callback=initMap"
       async
