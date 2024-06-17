@@ -100,27 +100,48 @@
       </div>
     </footer>
     <script>
-      async function initMap() {
-      let mapReastaurant;
-      let mapMerried;
+      function initMap() {
 
-      mapReastaurant = new google.maps.Map(document.querySelector("#map-restaurant"),
-        {
-          center: {
-            lat: 47.86636644473956,
-            lng: 35.05962885142143,
-          },
-          zoom: 17,
+        var centerLatLng1 = new google.maps.LatLng(47.86636644473956, 35.05962885142143);
+
+        var point1 = new google.maps.LatLng(47.86636644473956, 35.05962885142143);
+
+        var mapOptions1 = {
+          center: centerLatLng1,
+          zoom: 17
+        };
+
+        var centerLatLng2 = new google.maps.LatLng(47.83079492829225, 35.15930220709443);
+
+        var point2 = new google.maps.LatLng(47.83079492829225, 35.15930220709443);
+
+        var mapOptions2 = {
+          center: centerLatLng2,
+          zoom: 17
+        };
+
+        var map1 = new google.maps.Map(document.querySelector("#map-restaurant"), mapOptions1);
+
+        var map2 = new google.maps.Map(document.querySelector("#map-merried"), mapOptions2);
+
+        var marker1 = new google.maps.Marker({
+            position: point1,
+            map: map1,
+            title: 'Palmira',
+            draggable: false,
+            animation: google.maps.Animation.DROP
         });
 
-      mapMerried = new google.maps.Map(document.querySelector("#map-merried"), {
-        center: {
-          lat: 47.83079492829225,
-          lng: 35.15930220709443,
-        },
-        zoom: 17,
-      });
-    }
+        var marker2 = new google.maps.Marker({
+          position: point2,
+          map: map2,
+          title: 'Married Registration',
+          draggable: false,
+          animation: google.maps.Animation.DROP
+        });
+        }
+
+        google.maps.event.addDomListener(window, "load", initMap);
     </script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDmoJ3vqO4N8gyN8QUk1NsQvDVEjnZYyk&callback=initMap"
