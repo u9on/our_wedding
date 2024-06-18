@@ -1,0 +1,322 @@
+@font-face {
+  font-family: "Leo Hand";
+  src: url("../fonts/LeoHand-Light.ttf");
+}
+
+.page {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  height: 100%;
+}
+
+.page_body {
+  background-attachment: fixed;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 768px;
+  height: 200px;
+  background-color: #f6ecec;
+  background-image: url("../images/logo.png");
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.header_title {
+  text-align: center;
+  font-size: 32px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content_container {
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.content_text {
+  margin-top: 50px;
+  font-family: "Leo Hand", sans-serif;
+  width: 768px;
+
+  text-align: center;
+}
+
+.content_text-alarm {
+  width: 75px;
+  height: 75px;
+}
+
+.content_text-glasses {
+  width: 100px;
+  height: 100px;
+}
+
+.content_text-dress {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content_text-teleg {
+  margin: 30px;
+}
+
+
+.content_text-button {
+  margin: 0;
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 32px;
+}
+
+.content_date {
+  font-size: 48px;
+}
+
+.content_img {
+  display: flex;
+  justify-content: center;
+}
+
+.content_calendar {
+  width: 560px;
+  height: 400px;
+}
+
+.content_line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+
+  background-image: url("../images/line.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.footer_form {
+  display: flex;
+  justify-content: center;
+}
+
+.form_container {
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.footer {
+  padding-top: 50px;
+  opacity: 1;
+}
+
+.line {
+  width: 100px;
+  padding: 0 10px;
+}
+
+.text {
+  margin: 0;
+  height: 50px;
+}
+
+.man {
+  width: 100px;
+  height: 100px;
+}
+
+.woman {
+  width: 110px;
+  height: 110px;
+}
+
+.form {
+  width: 768px;
+}
+
+.restaurant {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.merried {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+@media (max-width: 568px) {
+  .header {
+    width: 300px;
+    height: 100px;
+  }
+
+  .content_container {
+      width: 300px;
+  }
+
+  .content_text {
+    width: 280px;
+    margin: 30px auto auto;
+    font-size: 20px;
+  }
+
+  .content_text-alarm {
+    width: 45px;
+    height: 45px;
+  }
+
+  .content_text-glasses {
+    width: 60px;
+    height: 60px;
+  }
+
+  .content_text-button {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .content_date {
+    font-size: 28px;
+  }
+
+  .content_calendar {
+    width: 280px;
+    height: 190px;
+  }
+
+  .content_line {
+    width: 250px;
+    height: 30px;
+    margin: auto;
+  }
+
+  .man {
+    width: 50px;
+    height: 50px;
+  }
+
+  .woman {
+    width: 55px;
+    height: 55px;
+  }
+
+  .form {
+    width: 300px;
+  }
+
+  .restaurant {
+    width: 280px;
+    height: 140px;
+  }
+
+  .merried {
+    width: 280px;
+    height: 140px;
+  }
+}
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .header {
+    width: 568px;
+    height: 150px;
+  }
+
+  .content_container {
+    width: 568px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .content_text {
+    width: 568px;
+    font-size: 26px;
+    margin: 40px auto auto;
+  }
+
+  .content_text-alarm {
+    width: 60px;
+    height: 60px;
+  }
+
+  .content_text-glasses {
+    width: 80px;
+    height: 80px;
+  }
+
+  .content_text-button {
+    width: 225px;
+    height: 50px;
+    font-size: 26px;
+  }
+
+  .content_date {
+    font-size: 36px;
+  }
+
+  .content_calendar {
+    width: 400px;
+    height: 290px;
+  }
+
+  .content_line {
+    width: 350px;
+    height: 60px;
+  }
+
+  .man {
+    width: 75px;
+    height: 75px;
+  }
+
+  .woman {
+    width: 80px;
+    height: 80px;
+  }
+
+  .form {
+    width: 568px;
+  }
+
+  .restaurant {
+    width: 568px;
+    height: 250px;
+  }
+
+  .merried {
+    width: 568px;
+    height: 250px;
+  }
+}
