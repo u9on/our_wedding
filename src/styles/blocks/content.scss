@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "Leo Hand";
+  src: url("../fonts/LeoHand-Light.ttf");
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &_container {
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.7;
+
+    @include on-mobile {
+      width: 300px;
+    }
+
+    @include on-tablet {
+      width: 568px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+
+  &_text {
+    margin-top: 50px;
+    font-family: "Leo Hand", sans-serif;
+    width: 768px;
+
+    text-align: center;
+
+    @include on-mobile {
+      width: 280px;
+      margin: 30px auto auto;
+      font-size: 20px;
+    }
+
+    @include on-tablet {
+      width: 568px;
+      font-size: 26px;
+      margin: 40px auto auto;
+    }
+
+    &-alarm {
+      width: 75px;
+      height: 75px;
+
+      @include on-mobile {
+        width: 45px;
+        height: 45px;
+      }
+
+      @include on-tablet {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &-glasses {
+      width: 100px;
+      height: 100px;
+
+      @include on-mobile {
+        width: 60px;
+        height: 60px;
+      }
+
+      @include on-tablet {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &-dress {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &-teleg {
+      margin: 30px;
+    }
+
+    &-button {
+      margin: 0;
+      width: 300px;
+      height: 70px;
+      text-align: center;
+      color: #fff;
+      background-color: #000;
+      font-size: 32px;
+
+      @include on-mobile {
+        width: 150px;
+        height: 35px;
+        font-size: 20px;
+      }
+
+      @include on-tablet {
+        width: 225px;
+        height: 50px;
+        font-size: 26px;
+      }
+    }
+  }
+
+  &_date {
+    font-size: 48px;
+
+    @include on-mobile {
+      font-size: 28px;
+    }
+
+    @include on-tablet {
+      font-size: 36px;
+    }
+  }
+
+  &_img {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &_calendar {
+    width: 560px;
+    height: 400px;
+
+    @include on-mobile {
+      width: 280px;
+      height: 190px;
+    }
+
+    @include on-tablet {
+      width: 400px;
+      height: 290px;
+    }
+  }
+
+  &_line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("../images/line.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include on-mobile {
+      width: 250px;
+      height: 30px;
+      margin: auto;
+    }
+
+    @include on-tablet {
+      width: 350px;
+      height: 60px;
+    }
+  }
+}
+
+.line {
+  width: 100px;
+  padding: 0 10px;
+}
+
+.text {
+  margin: 0;
+  height: 50px;
+}
+
+.man {
+  width: 100px;
+  height: 100px;
+
+  @include on-mobile {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include on-tablet {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.woman {
+  width: 110px;
+  height: 110px;
+
+  @include on-mobile {
+    width: 55px;
+    height: 55px;
+  }
+
+  @include on-tablet {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.form {
+  width: 768px;
+
+  @include on-mobile {
+    width: 300px;
+  }
+
+  @include on-tablet {
+    width: 568px;
+  }
+}
+
+.restaurant {
+  width: 100%;
+  height: 450px;
+  border: 0;
+
+  @include on-mobile {
+    width: 280px;
+    height: 140px;
+  }
+
+  @include on-tablet {
+    width: 568px;
+    height: 250px;
+  }
+}
+
+.merried {
+  width: 100%;
+  height: 450px;
+  border: 0;
+
+  @include on-mobile {
+    width: 280px;
+    height: 140px;
+  }
+
+  @include on-tablet {
+    width: 568px;
+    height: 250px;
+  }
+}

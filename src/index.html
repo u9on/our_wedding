@@ -1,13 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
+  <!-- #region Head -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.svg">
+    <title>Наша свадьба</title>
     <link rel="stylesheet" href="./styles/main.scss">
-    <script src="scripts/main.js" defer></script>
   </head>
-  <body>
-    <h1>Landing Page</h1>
+  <!-- #endregion -->
+  <body class="page_body">
+    <header class="header">
+    </header>
+    <main class="page_main content">
+      <div class="content_container">
+        <div class="content_text">
+          Нам приємно поділитися з Вами  великою радістю!<br>
+        </div>
+        <div class="content_img">
+          <img
+            class="content_calendar"
+            src="./images/calendar.png"
+            alt="Calendar"
+          >
+        </div>
+        <div class="content_text text"><strong class="content_date">17 серпня 2024р</strong></div>
+        <div class="content_line"></div>
+        <div class="content_text">
+          Відбудеться найяскравіша подія цього року - наше весілля!<br> Ми запрошуємо Вас розділити незабутні хвилини щастя в цей чудовий день.<br> Ваша присутність прикрасить наше свято.<br> Церемонія одруження відбудеться в РАГСі <br>
+          <div class="content_text-img">
+            <img
+              class="content_text-alarm"
+              src="./images/alarm.png"
+              alt="Alarm"
+            >
+          </div>
+          <strong>об 11:00.</strong><br>
+          <strong>пл. Пушкіна, 2</strong><br>
+          <div id="map-merried" class="merried"></div>
+            На святковий бенкет ми чекаємо Вас у<br>
+          <div class="contet_text-img">
+            <img
+              class="content_text-glasses"
+              src="./images/glasses.png"
+              alt="Glasses"
+            >
+          </div> <strong>ресторані &#171Пальміра&#187 <br> о 15:00<br> по вул. Вінтера, 9</strong><br>
+          <div id="map-restaurant" class="restaurant"></div>
+          <div class="content_text">
+            Дрес-код:<br>
+            <strong>Діловий стиль</strong>
+            <p>Нам буде дуже приємно, якщо при виборі свого вбрання ви дотримаєтесь світлих кольорів</p>
+            <div class="content_text-dress">
+              <div class="content_text-dress-man">
+                Чоловіки:<br>
+                <img
+                  class="man"
+                  src="./images/man.png"
+                  alt="Dress man"
+                >
+              </div>
+              <div class="content_text-dress-woman">
+                Жінки:<br>
+                <img
+                  class="woman"
+                  src="./images/woman.png"
+                  alt="Dress woman"
+                >
+              </div>
+            </div>
+          </div>
+          <div class="content_text-teleg">
+            Вступивши до нашого телеграм каналу, ви зжможете подивитись фотографії з нашого весілля<br>
+            <a href="https://t.me/+rb9UaehxHKlmYmY6">
+              <button class="content_text-button content_text">
+                Вступити
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_form">
+        <div class="form_container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd2jE2FV7NCUuE086PsSCi8_deuTaoECLSIiaTeEnOBYRSVBQ/viewform?embedded=true"
+          width="300"
+          height="882"
+          marginheight="0"
+          marginwidth="0"
+          class="form"
+          title="FormVisit">
+          Загрузка…
+          </iframe>
+        </div><br>
+      </div>
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDmoJ3vqO4N8gyN8QUk1NsQvDVEjnZYyk&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
