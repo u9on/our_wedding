@@ -11,12 +11,12 @@
 }
 
 .page_body {
-  -webkit-background-size: cover;
-
   background-attachment: fixed;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
+  -webkit-background-position: center;
   background-position: center;
 
   width: 100%;
