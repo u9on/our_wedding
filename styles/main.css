@@ -11,6 +11,8 @@
 }
 
 .page_body {
+  -webkit-background-size: cover;
+
   background-attachment: fixed;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
@@ -334,4 +336,8 @@
   to {
     opacity: 1;
   }
+}
+
+div {
+  height: 500vh;
 }
