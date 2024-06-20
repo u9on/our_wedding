@@ -22,6 +22,8 @@
   -webkit-background-position: center;
   background-position: center;
   position: fixed; /* Фиксируем элемент относительно окна браузера */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -35,6 +37,7 @@
 
   animation-name: visible;
   animation-duration: 2s;
+  overflow: auto;
 }
 
 .header {
@@ -344,5 +347,12 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .background {
+    background-attachment: scroll;
+    -webkit-transform: translateZ(0);
   }
 }
